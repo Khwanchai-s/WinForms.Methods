@@ -1,6 +1,6 @@
 ﻿namespace WinForms.Methods
 {
-    partial class Form1
+    partial class frmBMI
     {
         /// <summary>
         ///  Required designer variable.
@@ -45,6 +45,8 @@
             label9 = new Label();
             label10 = new Label();
             label11 = new Label();
+            btnClear = new Button();
+            label12 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -81,6 +83,7 @@
             txtName.Name = "txtName";
             txtName.Size = new Size(339, 34);
             txtName.TabIndex = 1;
+            txtName.TextChanged += txtName_TextChanged;
             // 
             // txtWeight
             // 
@@ -104,6 +107,7 @@
             txtAge.Name = "txtAge";
             txtAge.Size = new Size(128, 34);
             txtAge.TabIndex = 2;
+            txtAge.TextChanged += txtAge_TextChanged;
             // 
             // label5
             // 
@@ -134,18 +138,19 @@
             // 
             // btnBMI
             // 
-            btnBMI.Location = new Point(537, 167);
+            btnBMI.Location = new Point(547, 90);
             btnBMI.Name = "btnBMI";
             btnBMI.Size = new Size(197, 120);
             btnBMI.TabIndex = 5;
             btnBMI.Text = "ค่า BMI";
             btnBMI.UseVisualStyleBackColor = true;
+            btnBMI.Click += btnBMI_Click;
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.ForeColor = Color.Red;
-            label7.Location = new Point(658, 259);
+            label7.Location = new Point(668, 182);
             label7.Name = "label7";
             label7.Size = new Size(76, 28);
             label7.TabIndex = 6;
@@ -207,11 +212,34 @@
             label11.Text = "txtWeight";
             label11.Visible = false;
             // 
-            // Form1
+            // btnClear
+            // 
+            btnClear.Location = new Point(547, 237);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(188, 45);
+            btnClear.TabIndex = 7;
+            btnClear.Text = "เริ่มใหม่";
+            btnClear.UseVisualStyleBackColor = true;
+            btnClear.Click += btnClear_Click;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.ForeColor = Color.Red;
+            label12.Location = new Point(668, 271);
+            label12.Name = "label12";
+            label12.Size = new Size(86, 28);
+            label12.TabIndex = 6;
+            label12.Text = "btnClear";
+            label12.Visible = false;
+            // 
+            // frmBMI
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(772, 675);
+            Controls.Add(label12);
+            Controls.Add(btnClear);
             Controls.Add(label11);
             Controls.Add(label10);
             Controls.Add(label9);
@@ -231,7 +259,7 @@
             Controls.Add(label1);
             Font = new Font("Segoe UI", 12F);
             Margin = new Padding(4);
-            Name = "Form1";
+            Name = "frmBMI";
             Text = "โปรแกรมคำนวณค่า BMI  (เรื่อง Method/Function)";
             Load += Form1_Load;
             ResumeLayout(false);
@@ -257,5 +285,7 @@
         private Label label9;
         private Label label10;
         private Label label11;
+        private Button btnClear;
+        private Label label12;
     }
 }
