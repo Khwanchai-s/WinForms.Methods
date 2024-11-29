@@ -31,14 +31,20 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtName = new TextBox();
+            txtWeight = new TextBox();
             label4 = new Label();
-            textBox3 = new TextBox();
+            txtAge = new TextBox();
             label5 = new Label();
-            textBox4 = new TextBox();
+            txtHeight = new TextBox();
+            lblResult = new Label();
+            btnBMI = new Button();
+            label7 = new Label();
+            label8 = new Label();
             label6 = new Label();
-            button1 = new Button();
+            label9 = new Label();
+            label10 = new Label();
+            label11 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -69,19 +75,19 @@
             label3.TabIndex = 2;
             label3.Text = "ชื่อ-นามสกุล";
             // 
-            // textBox1
+            // txtName
             // 
-            textBox1.Location = new Point(155, 108);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(339, 34);
-            textBox1.TabIndex = 3;
+            txtName.Location = new Point(155, 108);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(339, 34);
+            txtName.TabIndex = 1;
             // 
-            // textBox2
+            // txtWeight
             // 
-            textBox2.Location = new Point(155, 271);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(128, 34);
-            textBox2.TabIndex = 4;
+            txtWeight.Location = new Point(155, 271);
+            txtWeight.Name = "txtWeight";
+            txtWeight.Size = new Size(128, 34);
+            txtWeight.TabIndex = 4;
             // 
             // label4
             // 
@@ -92,12 +98,12 @@
             label4.TabIndex = 2;
             label4.Text = "อายุ";
             // 
-            // textBox3
+            // txtAge
             // 
-            textBox3.Location = new Point(155, 167);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(128, 34);
-            textBox3.TabIndex = 3;
+            txtAge.Location = new Point(155, 167);
+            txtAge.Name = "txtAge";
+            txtAge.Size = new Size(128, 34);
+            txtAge.TabIndex = 2;
             // 
             // label5
             // 
@@ -108,54 +114,126 @@
             label5.TabIndex = 2;
             label5.Text = "ส่วนสูง (cm)";
             // 
-            // textBox4
+            // txtHeight
             // 
-            textBox4.Location = new Point(155, 219);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(128, 34);
-            textBox4.TabIndex = 3;
+            txtHeight.Location = new Point(155, 219);
+            txtHeight.Name = "txtHeight";
+            txtHeight.Size = new Size(128, 34);
+            txtHeight.TabIndex = 3;
+            // 
+            // lblResult
+            // 
+            lblResult.BackColor = Color.FromArgb(255, 224, 192);
+            lblResult.Font = new Font("Segoe UI", 24F);
+            lblResult.ForeColor = Color.Green;
+            lblResult.Location = new Point(12, 341);
+            lblResult.Name = "lblResult";
+            lblResult.Size = new Size(748, 315);
+            lblResult.TabIndex = 5;
+            lblResult.Text = "...";
+            // 
+            // btnBMI
+            // 
+            btnBMI.Location = new Point(537, 167);
+            btnBMI.Name = "btnBMI";
+            btnBMI.Size = new Size(197, 120);
+            btnBMI.TabIndex = 5;
+            btnBMI.Text = "ค่า BMI";
+            btnBMI.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.ForeColor = Color.Red;
+            label7.Location = new Point(658, 259);
+            label7.Name = "label7";
+            label7.Size = new Size(76, 28);
+            label7.TabIndex = 6;
+            label7.Text = "btnBMI";
+            label7.Visible = false;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.ForeColor = Color.Red;
+            label8.Location = new Point(674, 352);
+            label8.Name = "label8";
+            label8.Size = new Size(86, 28);
+            label8.TabIndex = 6;
+            label8.Text = "lblResult";
+            label8.Visible = false;
             // 
             // label6
             // 
-            label6.BackColor = Color.FromArgb(255, 224, 192);
-            label6.Font = new Font("Segoe UI", 24F);
-            label6.ForeColor = Color.Green;
-            label6.Location = new Point(12, 341);
+            label6.AutoSize = true;
+            label6.ForeColor = Color.Red;
+            label6.Location = new Point(399, 145);
             label6.Name = "label6";
-            label6.Size = new Size(748, 315);
-            label6.TabIndex = 5;
-            label6.Text = "...";
-            label6.TextAlign = ContentAlignment.MiddleCenter;
+            label6.Size = new Size(87, 28);
+            label6.TabIndex = 6;
+            label6.Text = "txtName";
+            label6.Visible = false;
             // 
-            // button1
+            // label9
             // 
-            button1.Location = new Point(537, 167);
-            button1.Name = "button1";
-            button1.Size = new Size(197, 120);
-            button1.TabIndex = 6;
-            button1.Text = "ค่า BMI";
-            button1.UseVisualStyleBackColor = true;
+            label9.AutoSize = true;
+            label9.ForeColor = Color.Red;
+            label9.Location = new Point(289, 173);
+            label9.Name = "label9";
+            label9.Size = new Size(70, 28);
+            label9.TabIndex = 6;
+            label9.Text = "txtAge";
+            label9.Visible = false;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.ForeColor = Color.Red;
+            label10.Location = new Point(289, 222);
+            label10.Name = "label10";
+            label10.Size = new Size(94, 28);
+            label10.TabIndex = 6;
+            label10.Text = "txtHeight";
+            label10.Visible = false;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.ForeColor = Color.Red;
+            label11.Location = new Point(289, 271);
+            label11.Name = "label11";
+            label11.Size = new Size(98, 28);
+            label11.TabIndex = 6;
+            label11.Text = "txtWeight";
+            label11.Visible = false;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(772, 675);
-            Controls.Add(button1);
+            Controls.Add(label11);
+            Controls.Add(label10);
+            Controls.Add(label9);
             Controls.Add(label6);
-            Controls.Add(textBox2);
-            Controls.Add(textBox4);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(btnBMI);
+            Controls.Add(lblResult);
+            Controls.Add(txtWeight);
+            Controls.Add(txtHeight);
             Controls.Add(label5);
-            Controls.Add(textBox3);
+            Controls.Add(txtAge);
             Controls.Add(label4);
-            Controls.Add(textBox1);
+            Controls.Add(txtName);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Font = new Font("Segoe UI", 12F);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "Form1";
             Text = "โปรแกรมคำนวณค่า BMI  (เรื่อง Method/Function)";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -165,13 +243,19 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtName;
+        private TextBox txtWeight;
         private Label label4;
-        private TextBox textBox3;
+        private TextBox txtAge;
         private Label label5;
-        private TextBox textBox4;
+        private TextBox txtHeight;
+        private Label lblResult;
+        private Button btnBMI;
+        private Label label7;
+        private Label label8;
         private Label label6;
-        private Button button1;
+        private Label label9;
+        private Label label10;
+        private Label label11;
     }
 }
